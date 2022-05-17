@@ -83,6 +83,7 @@ h1 {
 }
 .slider-item {
     width: 25%;
+    background-color: #764118;
     transition: all .6s ease;
 }
 img {
