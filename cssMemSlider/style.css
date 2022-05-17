@@ -60,17 +60,14 @@ body {
     font-size: 18px;
     color: black;
     background-color: rgb(140, 140, 255);
-    /*background-image: url(./assets/img/sky-background.jpg);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    overflow: hidden;*/
 }
 .wrapper {
-    width: 500px;
+    /*width: 500px;*/
+    width: 70%;
     display: flex;
     flex-wrap: wrap;
     align-self: center;
-    /*justify-content: space-between;*/
+    justify-content: space-between;
     padding-top: 10px;
 }
 .main {
@@ -82,19 +79,27 @@ body {
     margin-right: auto;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 h1 {
+    width: 100%;
+    text-align: center;
     margin-left: auto;
     margin-right: auto;
     padding-bottom: 10px;
 }
 .slider {
-    width: 100%;
-    height: 445px;
+    /*width: 100%;*/
+    width: 39vw;
+    /*height: 445px;*/
+    height: 35vw;
+    margin-left: auto;
+    margin-right: auto;
     border-top: solid 30px #764118;
     border-bottom: solid 30px #764118;
     border-left: solid 60px #764118;
     border-right: solid 60px #764118;
+    background-color: #764118;
     border-radius: 10px;
     overflow: hidden;
     margin-bottom: 15px;
@@ -102,6 +107,7 @@ h1 {
 .slider-wrapper {
     width: 400%;
     display: flex;
+    background-color: #764118;
     transition: all 0.6s ease;
 }
 .slider-item {
@@ -116,7 +122,8 @@ img {
 }
 
 .text-content {
-    width: 70%;
+    width: 45%;
+    margin-left: 20%;
     font-family: 'Lato';
     font-style: italic;
     font-weight: 400;
@@ -135,24 +142,25 @@ img {
     width: 25%;
     transition: all 0.6s ease;
 }
-  
-/*.slide__text {
-    width: 90%;
-    margin-left: 0.2rem;
-}*/
-
 input[name="btn"] {
     position: absolute;
     visibility: hidden;
 }
 .nav {
-    width: 30%;
+    width: 15%;
+    margin-right: 20%;
     text-align: right;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 .sticker {
     height: 35px;
     width: 35px;
     margin: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     cursor: pointer;
 }
 .sticker:hover .sticker-item {
@@ -162,7 +170,6 @@ input[name="btn"] {
 .sticker-item {
     height: 16px;
     width: 16px;
-    /*margin: 6px;*/
     display: inline-block;
     background-color: #764118;
     opacity: .6;
@@ -239,7 +246,7 @@ input[name="btn"] {
     display: flex;
     gap: 20px;
 }
-.footer a{
+.footer a {
     text-decoration: none;
     cursor: pointer;
     color: black;
@@ -262,10 +269,83 @@ input[name="btn"] {
 }
 
 /*Footer styles end*/
-/*adaptiv*/
 
-/*@media screen and (max-width: 840px) {
-    body {
-        background-size: auto 100%;
+/*adaptiv*/
+@media screen and (max-width: 1080px) {
+.slider {
+    width: 50vw;
+    height: 46vw;
+}
+.nav {
+    margin-right: 15%;
+}
+.text-content {
+    margin-left: 15%;
+}
+}
+@media screen and (max-width: 960px) {
+.slider {
+    width: 60vw;
+    height: 55vw;
+}
+.nav {
+    width: 100%;
+    justify-content: center;
+    margin-right: 0;
+}
+.text-content {
+    width: 100%;
+    order: 4;
+    margin-left: 10%;
+}
+}
+@media screen and (max-width: 720px) {
+    .slider {
+        width: 70vw;
+        height: 65vw;
     }
-} Если можно, проверьте, пожалуйста, мою работу завтра*/
+    .text-content {
+        margin-left: 0;
+    }   
+}
+@media screen and (max-width: 640px) {
+.slider {
+    border-top: solid 20px #764118;
+    border-bottom: solid 20px #764118;
+    border-left: solid 40px #764118;
+    border-right: solid 40px #764118;
+}
+.footer {
+    height: 80px;
+}
+.footer-container {
+    flex-direction: column;
+}
+}
+@media screen and (max-width: 520px) {
+.slider {
+    width: 80vw;
+    height: 65vw;
+}
+}
+@media screen and (max-width: 460px) {
+.slider {
+    width: 90vw;
+    height: 65vw;
+}    
+.text-content {
+    font-size: 24px;
+}
+h1 {
+    font-size: 30px;
+}
+}
+@media screen and (max-width: 380px) {
+.text-content {
+    font-size: 20px;
+} 
+.rss {
+    font-size: 18px;
+}   
+}
+Если можно, проверьте, пожалуйста, мою работу завтра*/
