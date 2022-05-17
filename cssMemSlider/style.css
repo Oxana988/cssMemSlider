@@ -32,7 +32,7 @@ html {
 }
 body {
     max-width: 1280px;
-    min-height: 100vh;
+    height: 100vh;
     padding: 0;
     display: flex;
     flex-direction: column;
@@ -43,27 +43,27 @@ body {
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
-    /*font-family: 'Arial', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 24px;*/
     color: black;
-    background-image: url(./assets/img/sky-background.jpg);
+    background-color: rgb(140, 140, 255);
+    /*background-image: url(./assets/img/sky-background.jpg);
     background-repeat: no-repeat;
-    background-size: 100% auto;
+    background-size: 100% 100%;
+    overflow: hidden;*/
 }
 .wrapper {
     width: 500px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding-top: 80px;
+    padding-top: 10px;
+}
+.main {
+    padding-bottom: 10px;
 }
 h1 {
     margin-left: auto;
     margin-right: auto;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
 }
 .slider {
     width: 100%;
@@ -74,7 +74,7 @@ h1 {
     border-right: solid 60px #764118;
     border-radius: 10px;
     overflow: hidden;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 .slider-wrapper {
     width: 400%;
@@ -126,8 +126,8 @@ input[name="btn"] {
     text-align: right;
 }
 .sticker {
-    height: 25px;
-    width: 25px;
+    height: 35px;
+    width: 35px;
     margin: 3px;
     cursor: pointer;
 }
@@ -136,8 +136,8 @@ input[name="btn"] {
     transform:scale(1.1);
 }
 .sticker-item {
-    height: 13px;
-    width: 13px;
+    height: 16px;
+    width: 16px;
     /*margin: 6px;*/
     display: inline-block;
     background-color: #764118;
@@ -205,11 +205,11 @@ input[name="btn"] {
 }
 .footer-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     height: 100%;
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-left: 60px;
+    padding-right: 60px;
 }
 .info-made {
     display: flex;
@@ -236,15 +236,12 @@ input[name="btn"] {
     padding: 3px;
     padding-top: 5px;
 }
-/*.rss:hover {
-    filter: invert(45%) sepia(96%) saturate(6132%) hue-rotate(123deg) brightness(94%) contrast(88%);
-}*/
 
 /*Footer styles end*/
 /*adaptiv*/
 
-@media screen and (max-width: 1210px) {
+/*@media screen and (max-width: 840px) {
     body {
         background-size: auto 100%;
     }
-}
+}*/
